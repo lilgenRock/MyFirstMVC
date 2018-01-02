@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>My first mvc view page!</p>
+<table class="table-bordered table-striped">
+
+    @for (int y = 1; y < 11; y++)
+    {
+    <tr>
+
+        @for (int x = 0; x < 11; x++)
+        {
+            <td>@(x*y)</td>
+        }
+    </tr>
+    }
+</table>
